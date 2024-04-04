@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    
+}
+:root{
+    --var-primary-color: #2888e8ff
+    
+}
+html{
+    font-size: 62.5%;
+}
+h1,h2,h3,h4{
+    font-family: 'Lexend Deca',sans-serif;
+}
+h1{
+    font-size: 4.8rem;
+}
+h2{
+    font-size: 3rem;
+}
+p{
+    font-size: 1.6rem;
+    letter-spacing: 0.08rem;
+}
+btn, input[type="submit"]{
+    border: .1rem solid #fff;
+    outline: none;
+    padding: .6rem 1.2rem;
+    font-size: 1.7rem;
+    text-transform: capitalize;
+    letter-spacing: 0.05rem;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+}
+rgbtn, input[type="submit"]{
+    border: .1rem solid #fff;
+    outline: none;
+    padding: .6rem 1.2rem;
+    font-size: 1.7rem;
+    text-transform: capitalize;
+    letter-spacing: 0.05rem;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+}
+
+.resitration-header{
+    height: 100vh;
+   background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+.resitration{
+    height: 100vh;
+   background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.logo a{
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+
+}
+body {
+    margin: 0;
+    min-width: px;
+    background-image:url("img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  } 
+  
+  
+ ul li.checked::before {
+    content: "";
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+  } 
+  
+  Style the close button 
+  .close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+  } 
+  
+   .close:hover {
+    background-color: #f44336;
+    color: white;
+  }
+   
+  /*styling the header*/
+  .header {
+    background: radial-gradient(
+      circle at -8.9% 51.2%,
+      rgb(255, 124, 0) 0%,
+      rgb(255, 124, 0) 15.9%,
+      rgb(255, 163, 77) 15.9%,
+      rgb(255, 163, 77) 24.4%,
+      rgb(19, 30, 37) 24.5%,
+      rgb(19, 30, 37) 66%
+    );
+    padding: 30px 40px;
+    color: white;
+    text-align: center;
+  }
+  
+  
+.TodoDiv {
+    margin: 0;
+    border: none;
+    border-radius: 10px;
+    width: 75%;
+    padding: 10px;
+    float: center;
+    font-size: 16px;
+  }
+  
+  .todo-save {
+    padding: 8.5px;
+    background: rgb(255, 124, 0);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 10px;
+  }
+  
+  #todo-save:hover {
+    background-color: #bbb;
+    color: black;
+  }
+
+.registration, .login{
+    min-height: 30rem;
+    min-width: 40vw;
+    
+}
+
+main{
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.form-text{
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.3));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 3rem 2rem;
+}
+.form-text p{
+    width: 30ch;
+    text-align: center;
+    margin: 2rem 0 3rem 0;
+}
+.form-text button{
+    background-color: #fff;
+    columns: #000;
+}
+.form-text button:hover{
+    background-color: transparent;
+    color:#fff ;
+}
+.rg-form{
+    width: 100%;
+    min-height: 45vh;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.rg-form p{
+    margin: 1rem 0 .7rem 0;
+}
+.icons{
+    display: flex;
+    gap:1.4rem;
+    margin: 1rem 0 .6rem 0;
+
+}
+.fa-brands{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border: 0.1rem solid #ccc;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+}
+input{
+    width: 22rem;
+    margin: .7rem 0;
+    border: none;
+    background-color: #e8e8e8;
+    padding: 1rem 1.9rem;
+    letter-spacing: 0.07rem;
+}
+input[type="submit"]{
+    margin: 1rem;
+    min-width: 9rem;
+    background-color: var(--var-primary-color);
+    color: #fff;
+}
+.registration:not(.usercontainer)
+{
+    display: none;
+}
+.usercontainer  .registration {
+    display: block;
+}
+.usercontainer .login {
+    display: none;
+}
